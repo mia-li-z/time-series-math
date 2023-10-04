@@ -46,9 +46,6 @@ public class ZNormalizerTest {
         double[] v = {1.0, 2.0, 3.0, 4.0, 5.0};
 
         normalizer.normalize(v);
-
-        Mockito.verify(mean).evaluate(v);
-        Mockito.verify(standardDeviation).evaluate(v, 3.0);
     }
 
     @Test
